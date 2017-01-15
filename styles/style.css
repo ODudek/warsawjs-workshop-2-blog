@@ -1,0 +1,22 @@
+body {
+
+}
+
+#form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: solid 1px #000000;
+}
+
+p {
+    text-align: center;
+}
+
+#post {
+    width: 80%;
+    margin: 0 auto;
+}

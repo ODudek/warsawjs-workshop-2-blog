@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WarsawJS Workshop</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/materialize.min.css" media="screen,projection"/>
+</head>
+<body>
+    <script type="text/html" id="template-post-add-form-component">
+        <form id="form" class="card-panel">
+            <input type="text" id="title" name="title">
+            <textarea id="content" class="materialize-textarea" name="content"></textarea>
+            <input type="submit" id="send" class="btn waves-effect waves-light" value="Wyślij">
+        </form>
+    </script>
+    <script type="text/html" id="template-post-component">
+        <div id="post" class="card-panel">
+            <h1 id="post-title"><a href="/#!/posts/{{id}}">{{title}}</a></h1>
+            <p id="post-content">{{content}}</p>
+        </div>
+    </script>
+    
+    <h1>Blog</h1>
+    <div id="contents">
+
+    </div>
+
+
+    <script src="node_modules/mustache/mustache.js"></script>
+    <script src="node_modules/super-event-emitter/dist/super-event-emitter.js"></script>
+    <script src="node_modules/grapnel/dist/grapnel.min.js"></script>
+    <script src="https://wzrd.in/standalone/uuid"></script>
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/materialize.min.js"></script>
+
+
+    <script src="scripts/blog.js"></script>
+    <script src="scripts/components/post-add-form-component.js"></script>
+    <script src="scripts/components/post-component.js"></script>
+    <script src="scripts/models/post-model.js"></script>
+    <script src="scripts/models/post-list-model.js"></script>
+    <script src="scripts/controllers/post-controller.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

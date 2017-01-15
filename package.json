@@ -1,0 +1,10 @@
+{
+  "name": "warsawjs-workshop2-blog",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grapnel": "^0.6.4",
+    "mustache": "^2.3.0",
+    "super-event-emitter": "^4.1.4",
+    "uuid": "^3.0.1"
+  }
+}
